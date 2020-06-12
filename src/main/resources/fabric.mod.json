@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "planetary",
+  "version": "${version}",
+
+  "name": "Planetary",
+  "description": "",
+  "authors": [
+    "Trikzon",
+    "Coda",
+    "Frenderman",
+    "Qbert",
+    "Geometrically"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "https://github.com/Day-Dreamers-Dev/Planetary"
+  },
+
+  "license": "LGPL-3.0-or-later",
+  "icon": "assets/planetary/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.daydreamers.planetary.Planetary"
+    ]
+  },
+  "mixins": [
+    "planetary.common.mixins.json",
+    "planetary.client.mixins.json"
+  ]
+}
