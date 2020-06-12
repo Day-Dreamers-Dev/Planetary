@@ -24,6 +24,9 @@
   "entrypoints": {
     "main": [
       "dev.daydreamers.planetary.Planetary"
+    ],
+    "client": [
+      "dev.daydreamers.planetary.client.PlanetaryClient"
     ]
   },
   "mixins": [
