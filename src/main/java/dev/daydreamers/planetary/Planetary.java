@@ -12,30 +12,16 @@
  */
 package dev.daydreamers.planetary;
 
-import dev.daydreamers.planetary.entity.RocketEntity;
+import dev.daydreamers.planetary.init.*;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
-import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
-import net.minecraft.entity.EntityDimensions;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.SpawnGroup;
-import net.minecraft.entity.mob.MobEntity;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public class Planetary implements ModInitializer
 {
-    //TODO Move this to a separate class
-    public static final EntityType<MobEntity> ROCKET = Registry.register(
-            Registry.ENTITY_TYPE,
-            new Identifier("planetary", "rocket"),
-            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, RocketEntity::new).dimensions(EntityDimensions.fixed(1f, 1f)).build()
-    );
-
     @Override
     public void onInitialize()
     {
-        FabricDefaultAttributeRegistry.register(ROCKET, RocketEntity.createMobAttributes());
+        PlanetaryBlocks.register();
+        PlanetaryItems.register();
+        PlanetaryEntities.register();
     }
 }
