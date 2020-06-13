@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "planetary:block/spirerock_brick_slab"
+        },
+        "type=top": {
+            "model": "planetary:block/spirerock_brick_slab_top"
+        },
+        "type=double": {
+            "model": "planetary:block/spirerock_bricks"
+        }
+    }
+}

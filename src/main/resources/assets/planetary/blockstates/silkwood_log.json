@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "planetary:block/silkwood_log"
+        },
+        "axis=z": {
+            "model": "planetary:block/silkwood_log",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "planetary:block/silkwood_log",
+            "x": 90,
+            "y": 90
+        }
+    }
+}

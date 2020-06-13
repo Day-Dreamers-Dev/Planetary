@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "planetary:block/spirerock",
+        "top": "planetary:block/spirerock",
+        "side": "planetary:block/spirerock"
+    }
+}

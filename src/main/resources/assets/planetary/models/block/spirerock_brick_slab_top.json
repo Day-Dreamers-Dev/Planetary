@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab_top",
+    "textures": {
+        "bottom": "planetary:block/spirerock_bricks",
+        "top": "planetary:block/spirerock_bricks",
+        "side": "planetary:block/spirerock_bricks"
+    }
+}

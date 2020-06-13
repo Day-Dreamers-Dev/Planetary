@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "planetary:spirerock_wall",
+    "planetary:spirerock_brick_wall"
+  ]
+}

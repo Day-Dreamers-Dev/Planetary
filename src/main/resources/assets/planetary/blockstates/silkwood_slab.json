@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "planetary:block/silkwood_slab"
+        },
+        "type=top": {
+            "model": "planetary:block/silkwood_slab_top"
+        },
+        "type=double": {
+            "model": "planetary:block/silkwood_planks"
+        }
+    }
+}

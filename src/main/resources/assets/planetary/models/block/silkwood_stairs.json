@@ -1,0 +1,8 @@
+{
+    "parent": "block/stairs",
+    "textures": {
+        "bottom": "planetary:block/silkwood_planks",
+        "top": "planetary:block/silkwood_planks",
+        "side": "planetary:block/silkwood_planks"
+    }
+}
