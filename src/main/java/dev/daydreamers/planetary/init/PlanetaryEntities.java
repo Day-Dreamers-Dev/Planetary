@@ -28,7 +28,7 @@ import java.util.List;
 public class PlanetaryEntities {
     public static final List<Runnable> registrants = new ArrayList<>();
 
-    public static final EntityType<MobEntity> ROCKET = makeEntity(
+    public static final EntityType<RocketEntity> ROCKET = makeEntity(
             "rocket", RocketEntity::new, SpawnGroup.MISC, 1f, 1f,
             false, 0, 0, RocketEntity.createMobAttributes()
     );

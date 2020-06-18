@@ -1,9 +1,10 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "dev.daydreamers.planetary.mixin.common",
+  "package": "dev.daydreamers.planetary.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "ClientPlayNetworkHandlerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

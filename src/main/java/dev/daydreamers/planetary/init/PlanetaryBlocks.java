@@ -11,6 +11,8 @@ package dev.daydreamers.planetary.init;
 
 import dev.daydreamers.planetary.Planetary;
 import dev.daydreamers.planetary.block.ThinLogBlock;
+import dev.daydreamers.planetary.block.rocket.RocketComputerBlock;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -47,6 +49,9 @@ public class PlanetaryBlocks
     public static final Block SPIREROCK_BRICK_WALL = makeBlock("spirerock_brick_wall", new WallBlock(AbstractBlock.Settings.copy(SPIREROCK_BRICKS)));
     public static final Block SPIREROCK_BRICK_SLAB = makeBlock("spirerock_brick_slab", new SlabBlock(AbstractBlock.Settings.copy(SPIREROCK_BRICKS)));
     public static final Block SPIREROCK_BRICK_STAIRS = makeBlock("spirerock_brick_stairs", new PubStairsBlock(SPIREROCK_BRICKS.getDefaultState(), AbstractBlock.Settings.copy(SPIREROCK_BRICKS)));
+
+    public static final Block LAUNCH_PAD = makeBlock("launch_pad", new Block(FabricBlockSettings.of(Material.STONE).hardness(4.0f)));
+    public static final Block ROCKET_COMPUTER = makeBlock("rocket_computer", new RocketComputerBlock(FabricBlockSettings.of(Material.METAL).hardness(4.0f)));
 
     public static Block makeBlock(String name, Block block, Item.Settings settings)
     {

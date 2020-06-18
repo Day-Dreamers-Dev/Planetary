@@ -22,12 +22,16 @@ import java.util.HashMap;
 public class RocketEntity extends MobEntity {
     public final HashMap<Vec3i, BlockState> rocketBlocks = new HashMap<>();
 
-    public RocketEntity(EntityType<MobEntity> type, World world) {
+    public RocketEntity(EntityType<RocketEntity> type, World world) {
         super(type, world);
 
         rocketBlocks.put(new Vec3i(0, 0, 0), Blocks.DIAMOND_BLOCK.getDefaultState());
-        rocketBlocks.put(new Vec3i(0, 0, 1), Blocks.STONE.getDefaultState());
-        rocketBlocks.put(new Vec3i(1, 0, 1), Blocks.STONE.getDefaultState());
-        rocketBlocks.put(new Vec3i(0, 1, 1), Blocks.STONE.getDefaultState());
+    }
+
+    @Override
+    public void tick() {
+        super.tick();
+
+        System.out.println("Bodasd");
     }
 }
