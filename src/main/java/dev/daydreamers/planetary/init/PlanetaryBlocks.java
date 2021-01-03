@@ -99,7 +99,7 @@ public class PlanetaryBlocks
         }
     }
 
-    public static class PubWoodButtonBlock extends WoodButtonBlock
+    public static class PubWoodButtonBlock extends WoodenButtonBlock
     {
         public PubWoodButtonBlock(Settings settings)
         {

@@ -27,6 +27,12 @@ public class RocketComputerBlock extends Block {
         super(settings);
     }
 
+    /*@Override
+    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+        System.out.println(world.isClient);
+        return super.onUse(state, world, pos, player, hand, hit);
+    }*/
+
     @Override
     public void onPlaced(World world, BlockPos pos, BlockState state, LivingEntity placer, ItemStack itemStack) {
         super.onPlaced(world, pos, state, placer, itemStack);
@@ -35,7 +41,6 @@ public class RocketComputerBlock extends Block {
         HashMap<Vec3i, BlockState> offsetNeighbors = new HashMap<>();
 
         for (Map.Entry<BlockPos, BlockState> neighbor : neighbors.entrySet()) {
-            System.out.println(neighbor.getKey().subtract(pos));
             offsetNeighbors.put(neighbor.getKey().subtract(pos), neighbor.getValue());
             world.setBlockState(neighbor.getKey(), Blocks.AIR.getDefaultState());
         }
@@ -43,6 +48,7 @@ public class RocketComputerBlock extends Block {
 
         RocketEntity rocket = new RocketEntity(PlanetaryEntities.ROCKET, world);
         rocket.rocketBlocks.putAll(offsetNeighbors);
+        rocket.setPos(pos.getX(), pos.getY(), pos.getZ());
         world.spawnEntity(rocket);
     }
 

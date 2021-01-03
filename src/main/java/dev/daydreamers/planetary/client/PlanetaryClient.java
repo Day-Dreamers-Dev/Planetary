@@ -10,6 +10,7 @@
 package dev.daydreamers.planetary.client;
 
 import dev.daydreamers.planetary.client.init.PlanetaryRenderers;
+import dev.daydreamers.planetary.client.networking.PlanetaryClientNetworking;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -19,5 +20,6 @@ public class PlanetaryClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         PlanetaryRenderers.register();
+        PlanetaryClientNetworking.register();
     }
 }

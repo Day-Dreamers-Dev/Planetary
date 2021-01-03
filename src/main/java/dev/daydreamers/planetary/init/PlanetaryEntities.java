@@ -29,8 +29,8 @@ public class PlanetaryEntities {
     public static final List<Runnable> registrants = new ArrayList<>();
 
     public static final EntityType<RocketEntity> ROCKET = makeEntity(
-            "rocket", RocketEntity::new, SpawnGroup.MISC, 1f, 1f,
-            false, 0, 0, RocketEntity.createMobAttributes()
+            "rocket", RocketEntity::new, SpawnGroup.MISC, 10f, 1f,
+            false, 0, 0, null
     );
 
     public static <T extends Entity> EntityType<T> makeEntity(
